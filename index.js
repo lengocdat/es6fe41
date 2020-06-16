@@ -194,3 +194,8 @@ let mangCardSanPham = mangSanPham.map((item, index) => {
     </div>}`;
 });
 console.log(mangCardSanPham);
+
+let tongTien = mangSanPham.reduce((tongTien,item,index)=>{
+    return tongTien += item.Gia;
+},0)
+console.log(tongTien);
